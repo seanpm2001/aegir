@@ -31,7 +31,7 @@ export default {
           default: userConfig.run.bail
         },
         concurrency: {
-          type: 'boolean',
+          type: 'number',
           describe: 'How many scripts to run at the same time',
           default: userConfig.run.concurrency
         }

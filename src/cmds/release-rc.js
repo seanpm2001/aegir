@@ -37,7 +37,7 @@ export default {
           default: userConfig.releaseRc.tag
         },
         concurrency: {
-          type: 'boolean',
+          type: 'number',
           describe: 'How many modules to release at the same time',
           default: userConfig.releaseRc.concurrency
         }

@@ -31,7 +31,7 @@ export default {
           default: userConfig.exec.bail
         },
         concurrency: {
-          type: 'boolean',
+          type: 'number',
           describe: 'How many commands to run at the same time',
           default: userConfig.exec.concurrency
         }
