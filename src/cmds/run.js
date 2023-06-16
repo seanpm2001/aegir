@@ -28,7 +28,12 @@ export default {
         bail: {
           type: 'boolean',
           describe: '',
-          default: userConfig.build.bundle
+          default: userConfig.run.bail
+        },
+        concurrency: {
+          type: 'boolean',
+          describe: 'How many scripts to run at the same time',
+          default: userConfig.run.concurrency
         }
       })
       .positional('script', {
