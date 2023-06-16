@@ -28,7 +28,12 @@ export default {
         bail: {
           type: 'boolean',
           describe: '',
-          default: userConfig.build.bundle
+          default: userConfig.exec.bail
+        },
+        concurrency: {
+          type: 'boolean',
+          describe: 'How many commands to run at the same time',
+          default: userConfig.exec.concurrency
         }
       })
   },
